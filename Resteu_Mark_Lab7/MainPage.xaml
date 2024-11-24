@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Resteu_Mark_Lab7.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Image
+                Source="mark.jpg"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="Imagine personalizată pentru mine" />
+
+                <Label
+                Text="Salut, Mark!"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+                <Label
+                Text="Bine ai venit la aplicația ta .NET Multi-platform App UI! Acesta este un proiect in C#."
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Acesta este un proiect pentru laborator." />
+
+                <Button
+                x:Name="CounterBtn"
+                Text="Apasă-mă"
+                SemanticProperties.Hint="Numără de câte ori apeși"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
